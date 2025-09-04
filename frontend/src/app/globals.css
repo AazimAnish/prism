@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+:root {
+  /* ColorHunt Palette: https://colorhunt.co/palette/f7f7f7ffb22c854836000000 */
+  --background: #F7F7F7;
+  --foreground: #000000;
+  --primary: #FFB22C;
+  --secondary: #854836;
+  --muted: #F7F7F7;
+  --accent: #FFB22C;
+  
+  /* Additional shades */
+  --primary-light: #FFC759;
+  --primary-dark: #E09B15;
+  --secondary-light: #A05A43;
+  --secondary-dark: #6A3829;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-muted: var(--muted);
+  
+  /* Font variables */
+  --font-sans: var(--font-work-sans);
+  --font-heading: var(--font-heading);
+  
+  /* Custom colors for better design system */
+  --color-primary-light: var(--primary-light);
+  --color-primary-dark: var(--primary-dark);
+  --color-secondary-light: var(--secondary-light);
+  --color-secondary-dark: var(--secondary-dark);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-work-sans), system-ui, sans-serif;
+}
+
+/* Heading styles using Inter as Chivo alternative */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading), system-ui, sans-serif;
+  font-weight: 700;
+}
