@@ -1,4 +1,6 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   /* ColorHunt Palette: https://colorhunt.co/palette/f7f7f7ffb22c854836000000 */
@@ -14,25 +16,6 @@
   --primary-dark: #E09B15;
   --secondary-light: #A05A43;
   --secondary-dark: #6A3829;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-primary: var(--primary);
-  --color-secondary: var(--secondary);
-  --color-accent: var(--accent);
-  --color-muted: var(--muted);
-  
-  /* Font variables */
-  --font-sans: var(--font-work-sans);
-  --font-heading: var(--font-heading);
-  
-  /* Custom colors for better design system */
-  --color-primary-light: var(--primary-light);
-  --color-primary-dark: var(--primary-dark);
-  --color-secondary-light: var(--secondary-light);
-  --color-secondary-dark: var(--secondary-dark);
 }
 
 body {
